@@ -1,6 +1,8 @@
 # MHProgressButton
 See the loading progress on your UIButton
 
+![alt tag](https://github.com/emadhegab/MHProgressButton/blob/master/Example.gif?raw=true)
+
 ## install
 
 ```
