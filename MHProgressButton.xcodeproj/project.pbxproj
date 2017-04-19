@@ -12,6 +12,7 @@
 		FDE929041EA75DBB00AC183A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE929021EA75DBB00AC183A /* Main.storyboard */; };
 		FDE929061EA75DBB00AC183A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDE929051EA75DBB00AC183A /* Assets.xcassets */; };
 		FDE929091EA75DBB00AC183A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE929071EA75DBB00AC183A /* LaunchScreen.storyboard */; };
+		FDE929121EA75E0500AC183A /* MHProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE929111EA75E0500AC183A /* MHProgressButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FDE929051EA75DBB00AC183A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDE929081EA75DBB00AC183A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDE9290A1EA75DBB00AC183A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDE929111EA75E0500AC183A /* MHProgressButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHProgressButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		FDE928F21EA75DBB00AC183A = {
 			isa = PBXGroup;
 			children = (
+				FDE929101EA75DF900AC183A /* Sources */,
 				FDE928FD1EA75DBB00AC183A /* MHProgressButton */,
 				FDE928FC1EA75DBB00AC183A /* Products */,
 			);
@@ -62,6 +65,14 @@
 				FDE9290A1EA75DBB00AC183A /* Info.plist */,
 			);
 			path = MHProgressButton;
+			sourceTree = "<group>";
+		};
+		FDE929101EA75DF900AC183A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FDE929111EA75E0500AC183A /* MHProgressButton.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +107,7 @@
 				TargetAttributes = {
 					FDE928FA1EA75DBB00AC183A = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 4ZMWUQ8BD9;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,6 +150,7 @@
 			files = (
 				FDE929011EA75DBB00AC183A /* ViewController.swift in Sources */,
 				FDE928FF1EA75DBB00AC183A /* AppDelegate.swift in Sources */,
+				FDE929121EA75E0500AC183A /* MHProgressButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +275,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4ZMWUQ8BD9;
 				INFOPLIST_FILE = MHProgressButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourlance.MHProgressButton;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourlance.MHProgresButtton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -274,9 +288,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4ZMWUQ8BD9;
 				INFOPLIST_FILE = MHProgressButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourlance.MHProgressButton;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourlance.MHProgresButtton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -301,6 +316,7 @@
 				FDE9290F1EA75DBB00AC183A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

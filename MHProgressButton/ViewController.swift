@@ -9,12 +9,39 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var timer: Timer?
+    var i = 0.0
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var progressButton: MHProgressButton!
+    override func viewWillAppear(_ animated: Bool) {
+         super.viewWillAppear(animated)
+        setupButtonView()
     }
 
+    func setupButtonView() {
+        progressButton.layer.cornerRadius = progressButton.frame.height / 2
+        progressButton.layer.borderColor = UIColor(colorLiteralRed: 46, green: 46, blue: 50, alpha: 1).cgColor
+        progressButton.layer.borderWidth = 1
+        progressButton.clipsToBounds = true
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+    @IBAction func startProgress() {
+        i = 0.0
+        timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+    }
+
+
+    func update () {
+
+        self.progressButton.linearLoadingWith(progress: CGFloat(i))
+        i += 1
+        if i > 100 {
+            timer?.invalidate()
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
