@@ -18,7 +18,7 @@ class MHProgressButton: UIButton {
         let backgroundImage = mergeImagesOn(progress: progress)
         self.setBackgroundImage(backgroundImage, for: .normal)
     }
- 
+
     fileprivate func mergeImagesOn(progress: CGFloat) -> UIImage {
         let buttonWidth = frame.width
         let progressWidth = progress * (buttonWidth / 100)

@@ -30,6 +30,7 @@ class ViewController: UIViewController {
 
     @IBAction func startProgress() {
         i = 0.0
+        progressButton.setTitle("Loading...", for: .normal)
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(update), userInfo: nil, repeats: true)
     }
 
