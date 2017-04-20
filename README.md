@@ -6,15 +6,15 @@ See the loading progress on your UIButton
 ## install
 
 ```
-$ pod install MPProgressButton
+$ pod install MHProgressButton
 ```
 or in your podfile
 ```
-pod 'MPProgressButton'
+pod 'MHProgressButton'
 ```
 
 ## Usage
- add a UIButton to your view and subclass it with **MPProgressButton**.. set background color as needed and set the progress color 
+ add a UIButton to your view and subclass it with **MHProgressButton**.. set background color as needed and set the progress color 
  and then call **linearLoadingWith(progress: CGFloat)** method and pass your progress percentage to it... voila .. 
  
  
