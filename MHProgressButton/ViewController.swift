@@ -20,8 +20,6 @@ class ViewController: UIViewController {
 
     func setupButtonView() {
         progressButton.layer.cornerRadius = progressButton.frame.height / 2
-        progressButton.layer.borderColor = UIColor(colorLiteralRed: 46, green: 46, blue: 50, alpha: 1).cgColor
-        progressButton.layer.borderWidth = 1
         progressButton.clipsToBounds = true
     }
     override func viewDidLoad() {
@@ -35,7 +33,7 @@ class ViewController: UIViewController {
     }
 
 
-    func update () {
+    @objc func update () {
 
         self.progressButton.linearLoadingWith(progress: CGFloat(i))
         i += 1
