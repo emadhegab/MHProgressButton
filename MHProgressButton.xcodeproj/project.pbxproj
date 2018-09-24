@@ -108,7 +108,7 @@
 					FDE928FA1EA75DBB00AC183A = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = C9AQ634VE2;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -301,8 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourlance.MHProgresButtton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -319,8 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourlance.MHProgresButtton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
