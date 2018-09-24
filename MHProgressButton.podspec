@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.version      = "1.0.0"
   s.summary      = "See your progress on your UIButton 🙏."
   s.homepage     = "https://github.com/emadhegab/MHProgressButton"
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   s.author             = { "Mohamed Emad Hegab" => "emadhegab@gmail.com"}
